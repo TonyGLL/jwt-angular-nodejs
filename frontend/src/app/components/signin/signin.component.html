@@ -1,0 +1,41 @@
+<div class="row">
+
+  <div class="col-md-4 mx-auto">
+
+    <div class="card text-white">
+
+      <div class="card-header bg-secondary">
+
+        Signin
+
+      </div>
+
+      <div class="card-body">
+
+        <form (submit)="signin()">
+
+          <div class="form-group">
+
+            <input type="text" [(ngModel)]="user.email" name="email" class="form-control" placeholder="Email" required autofocus>
+
+          </div>
+
+          <div class="form-group">
+
+            <input type="password" [(ngModel)]="user.password" name="password" class="form-control" placeholder="Password" required autofocus>
+
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-block">
+            Login
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
